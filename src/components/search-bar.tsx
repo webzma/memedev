@@ -29,7 +29,7 @@ export function SearchBar() {
         <Input
           type="search"
           placeholder="search.memes('query')"
-          className="pl-9 pr-12 code-font"
+          className="pl-9 pr-12 font-mono"
           value={query}
           onChange={(e) => setQuery(e.target.value)}
         />

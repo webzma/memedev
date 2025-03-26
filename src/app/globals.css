@@ -7,7 +7,7 @@
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-sans);
-  --font-mono: var(--font-mono);
+  --code-mono: var(--font-mono);
   --color-sidebar-ring: var(--sidebar-ring);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
@@ -61,7 +61,7 @@
   --accent-foreground: rgba(25, 25, 25, 1);
   --destructive: rgba(204, 51, 51, 1);
   --destructive-foreground: rgba(250, 250, 250, 1);
-  --border: rgba(230, 230, 230, 1);
+  --border: rgba(230, 230, 250, 1);
   --input: rgba(230, 230, 230, 1);
   --ring: rgba(93, 175, 80, 1);
   --radius: 0.5rem;
