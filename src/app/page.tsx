@@ -61,7 +61,7 @@ export default function Home() {
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
-                <div className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-sm font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-primary text-primary-foreground hover:bg-primary/80 mb-2">
+                <div className="text-zinc-900 inline-flex items-center rounded-full border px-2.5 py-0.5 text-sm font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-primary text-primary-foreground hover:bg-primary/80 mb-2">
                   <Terminal className="mr-1 h-3 w-3" />
                   <span className="code-font">v1.0.0</span>
                 </div>
@@ -70,7 +70,7 @@ export default function Home() {
                     console.log
                   </span>
                   <span>(</span>
-                  <span className="syntax-string text-yellow-200">
+                  <span className="text-[#ffd166]">
                     'Memes de Programación'
                   </span>
                   <span>);</span>
@@ -82,9 +82,9 @@ export default function Home() {
               </div>
               <div className="space-x-4 flex justify-center items-center">
                 <Link href="/upload">
-                  <Button className="gap-1 bg-green-400 h-10">
+                  <Button className="gap-1 h-10 code-font text-zinc-900">
                     <Upload className="h-4 w-4" />
-                    <span className="code-font">upload.meme()</span>
+                    <span>upload.meme()</span>
                   </Button>
                 </Link>
                 <Link href="/search">
