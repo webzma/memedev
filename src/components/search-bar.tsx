@@ -8,7 +8,7 @@ import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { useRouter } from "next/navigation";
 
-export function SearchBar() {
+export default function SearchBar() {
   const [query, setQuery] = useState("");
   const router = useRouter();
 

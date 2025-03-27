@@ -1,14 +1,22 @@
 import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "MemeDev - Memes para Desarrolladores",
+  description: "Comparte y descubre los mejores memes de programación",
+};
+
+// Fonts (it can be refactor and put it in a separated file)
 import { Inter, Fira_Code } from "next/font/google";
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
 const firaCode = Fira_Code({ subsets: ["latin"], variable: "--font-mono" });
+
+// Global styles
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 
-export const metadata: Metadata = {
-  title: "MemDev - Memes para Desarrolladores",
-  description: "Comparte y descubre los mejores memes de programación",
-};
+// Components
+import Header from "@/components/header";
+import Footer from "@/components/footer";
 
 export default function RootLayout({
   children,
@@ -26,7 +34,9 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
+          <Header />
           {children}
+          <Footer />
         </ThemeProvider>
       </body>
     </html>
