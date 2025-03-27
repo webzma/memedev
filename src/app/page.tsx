@@ -4,12 +4,13 @@ import { useState } from "react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { MemeGrid } from "@/components/meme-grid";
-import { Code, Upload, Terminal, Github, Coffee, Search } from "lucide-react";
+import { Code, Upload, Terminal, Coffee, Search } from "lucide-react";
 import { CodeBlock } from "@/components/code-block";
 import { SearchBar } from "@/components/search-bar";
 import { CategoryFilter } from "@/components/category-filter";
 import { ModeToggle } from "@/components/mode-toggle";
 import { memes } from "@/lib/meme-data";
+import GithubIcon from "@/components/icons/github";
 
 export default function Home() {
   const [filteredMemes, setFilteredMemes] = useState(memes);
@@ -49,7 +50,7 @@ export default function Home() {
               target="_blank"
               className="text-sm font-medium hover:text-primary"
             >
-              <Github className="h-5 w-5" />
+              <GithubIcon width={18} height={18} />
               <span className="sr-only">GitHub</span>
             </Link>
             <ModeToggle />
@@ -61,7 +62,7 @@ export default function Home() {
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
-                <div className="text-zinc-900 inline-flex items-center rounded-full border px-2.5 py-0.5 text-sm font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-primary text-primary-foreground hover:bg-primary/80 mb-2">
+                <div className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-sm font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-primary text-primary-foreground hover:bg-primary/80 mb-2">
                   <Terminal className="mr-1 h-3 w-3" />
                   <span className="font-mono">v1.0.0</span>
                 </div>
