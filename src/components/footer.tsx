@@ -7,7 +7,7 @@ export default function Footer() {
         <div className="flex flex-col items-center justify-center gap-4 md:flex-row md:gap-6">
           <p className="text-center text-sm leading-loose text-muted-foreground md:text-left code-font">
             <span className="syntax-comment">
-              © {new Date().getFullYear()} Made by @webzma with love.
+              © {new Date().getFullYear()} Made by @webzma with love ❣️.
             </span>
           </p>
           <nav className="flex gap-4 sm:gap-6">

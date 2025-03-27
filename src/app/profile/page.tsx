@@ -42,14 +42,6 @@ const savedMemes = [memes[0], memes[2], memes[4]];
 export default function ProfilePage() {
   return (
     <div className="flex flex-col min-h-screen">
-      <header className="sticky top-0 z-10 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-        <div className="container flex h-16 items-center">
-          <Link href="/" className="flex items-center gap-2 font-bold text-xl">
-            <Code className="h-5 w-5 text-primary" />
-            <span className="code-font">MemDev</span>
-          </Link>
-        </div>
-      </header>
       <main className="flex-1 container py-12">
         <div className="mx-auto max-w-7xl">
           <Link
@@ -213,17 +205,6 @@ export default function ProfilePage() {
           </Tabs>
         </div>
       </main>
-      <footer className="border-t py-6 bg-card">
-        <div className="container px-4 md:px-6">
-          <div className="flex flex-col items-center justify-center gap-4 md:flex-row md:gap-6">
-            <p className="text-center text-sm leading-loose text-muted-foreground md:text-left code-font">
-              <span className="syntax-comment">
-                // © {new Date().getFullYear()} MemDev. All rights reserved.
-              </span>
-            </p>
-          </div>
-        </div>
-      </footer>
     </div>
   );
 }
