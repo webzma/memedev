@@ -5,11 +5,11 @@ import { CodeBlock } from "./code-block";
 
 export default function HeroSection() {
   return (
-    <section className="w-full py-12 md:py-24 lg:py-32 bg-[#1c1917] border-b flex justify-center">
+    <section className="w-full py-12 md:py-24 lg:py-32  border-b flex justify-center bg-muted/50">
       <div className="container px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
           <div className="space-y-2">
-            <div className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-sm font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-primary text-primary-foreground hover:bg-primary/80 mb-2">
+            <div className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-sm font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-primary text-muted hover:bg-primary/80 mb-2">
               <Terminal className="mr-1 h-3 w-3" />
               <span className="font-mono">v1.0.0</span>
             </div>

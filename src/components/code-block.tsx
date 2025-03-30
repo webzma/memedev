@@ -21,13 +21,13 @@ export function CodeBlock() {
   }, []);
 
   return (
-    <div className="font-mono overflow-hidden border p-6 rounded-md">
+    <div className="font-mono overflow-hidden border border-primary/30 p-6 rounded-md">
       <pre className="text-left overflow-x-auto p-0 text-sm">
         {codeLines.map((line, index) => (
           <div
             key={index}
             className={`transition-opacity duration-500 ${
-              index === currentLine ? "opacity-100" : "opacity-40"
+              index === currentLine ? "text-primary-foreground" : "opacity-40"
             } ${line.type === "comment" ? "syntax-comment" : ""}`}
           >
             {line.text}
