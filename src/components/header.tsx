@@ -13,7 +13,10 @@ export default function Header() {
   return (
     <header className="flex justify-center sticky top-0 z-10 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 items-center">
-        <Link href="/" className="flex items-center gap-2 font-bold text-xl">
+        <Link
+          href="/"
+          className="flex items-center gap-2 font-bold text-xl cursor-pointer"
+        >
           <Code className="h-5 w-5 text-primary" />
           <span className="font-mono font-medium">MemeDev</span>
         </Link>
@@ -27,7 +30,7 @@ export default function Header() {
             <Button
               variant={pathname === "/upload" ? "secondary" : "ghost"}
               size="sm"
-              className="hidden sm:flex gap-1"
+              className="hidden sm:flex gap-1 cursor-pointer"
             >
               <Upload className="h-4 w-4" />
               <span className="hidden md:inline">Upload</span>
@@ -38,7 +41,7 @@ export default function Header() {
             <Button
               variant={pathname === "/create" ? "secondary" : "ghost"}
               size="sm"
-              className="hidden sm:flex gap-1"
+              className="hidden sm:flex gap-1 cursor-pointer"
             >
               <Wand2 className="h-4 w-4" />
               <span className="hidden md:inline">Create</span>
@@ -49,7 +52,7 @@ export default function Header() {
             <Button
               variant={pathname === "/trending" ? "secondary" : "ghost"}
               size="sm"
-              className="hidden sm:flex gap-1"
+              className="hidden sm:flex gap-1 cursor-pointer"
             >
               <TrendingUp className="h-4 w-4" />
               <span className="hidden md:inline">Trending</span>
@@ -60,6 +63,7 @@ export default function Header() {
             <Button
               variant={pathname === "/profile" ? "secondary" : "ghost"}
               size="icon"
+              className="cursor-pointer"
             >
               <User className="size-5" />
               <span className="sr-only">Perfil</span>
@@ -67,7 +71,7 @@ export default function Header() {
           </Link>
 
           <Link href="https://github.com" target="_blank">
-            <Button variant="ghost">
+            <Button variant="ghost" className="cursor-pointer">
               <GithubIcon />
               <span className="sr-only">GitHub</span>
             </Button>
