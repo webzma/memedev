@@ -12,7 +12,7 @@ export function MemeGrid({ memes = defaultMemes }: MemeGridProps) {
     <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5">
       {memes.map((meme) => (
         <Link key={meme.id} href={`/meme/${meme.id}`}>
-          <Card className="overflow-hidden transition-all hover:border-primary w-[270px]">
+          <Card className="overflow-hidden transition-all hover:border-primary w-[270px] bg-muted">
             <CardContent className="p-0">
               <div className="relative aspect-square"></div>
               <div className="p-4">
