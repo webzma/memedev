@@ -45,20 +45,24 @@ export default function UploadPage() {
 
   return (
     <div className="flex flex-col min-h-screen">
-      <main className="flex-1 container py-12">
+      <main className="flex-1 container py-12 mx-auto">
         <div className="mx-auto max-w-2xl">
           <Link
             href="/"
             className="inline-flex items-center gap-1 mb-6 text-sm font-medium hover:text-primary"
           >
             <ArrowLeft className="h-4 w-4" />
-            <span className="terminal-prompt code-font">cd ..</span>
+            <span className="terminal-prompt font-mono">
+              <span className="text-primary">$</span> cd ..
+            </span>
           </Link>
-          <Card className="border-primary/20">
+          <Card className="border-primary/20 bg-muted">
             <CardHeader>
               <div className="flex items-center gap-2">
                 <Terminal className="h-5 w-5 text-primary" />
-                <CardTitle className="code-font">upload.meme()</CardTitle>
+                <CardTitle className="font-mono text-2xl">
+                  upload.meme()
+                </CardTitle>
               </div>
               <CardDescription className="syntax-comment">
                 // Comparte tu meme con la comunidad
@@ -67,41 +71,41 @@ export default function UploadPage() {
             <form onSubmit={handleSubmit}>
               <CardContent className="space-y-6">
                 <div className="space-y-2">
-                  <Label htmlFor="title" className="code-font">
+                  <Label htmlFor="title" className="font-mono">
                     title:
                   </Label>
                   <Input
                     id="title"
                     placeholder="const title = 'Tu título aquí';"
                     required
-                    className="code-font"
+                    className="code-font bg-background! font-mono h-10"
                   />
                 </div>
                 <div className="space-y-2">
-                  <Label htmlFor="description" className="code-font">
+                  <Label htmlFor="description" className="font-mono">
                     description:
                   </Label>
                   <Textarea
                     id="description"
                     placeholder="/* Describe tu meme aquí */"
-                    className="code-font"
+                    className="font-mono bg-background!"
                   />
                 </div>
                 <div className="space-y-2">
-                  <Label htmlFor="tags" className="code-font">
+                  <Label htmlFor="tags" className="font-mono">
                     tags[]:
                   </Label>
                   <Input
                     id="tags"
                     placeholder="['javascript', 'css', 'bugs']"
-                    className="code-font"
+                    className="code-font bg-background! font-mono h-10"
                   />
                 </div>
                 <div className="space-y-2">
-                  <Label htmlFor="image" className="code-font">
+                  <Label htmlFor="image" className="font-mono">
                     image.upload():
                   </Label>
-                  <div className="flex flex-col items-center gap-4 p-6 border-2 border-dashed rounded-lg border-primary/30 bg-card">
+                  <div className="flex flex-col items-center gap-4 p-6 border-2 border-dashed rounded-lg border-primary/30 ">
                     <Upload className="h-8 w-8 text-primary" />
                     <div className="text-center">
                       <p className="text-sm font-medium code-font">
@@ -143,7 +147,10 @@ export default function UploadPage() {
                 )}
               </CardContent>
               <CardFooter>
-                <Button type="submit" className="w-full code-font">
+                <Button
+                  type="submit"
+                  className="w-full font-mono mt-6 h-10 text-zinc-900 cursor-pointer"
+                >
                   <Upload className="h-4 w-4 mr-2" />
                   meme.publish()
                 </Button>
