@@ -44,7 +44,7 @@ export default function UploadPage() {
   };
 
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="flex flex-col min-h-screen border-bordertogray">
       <main className="flex-1 container py-12 mx-auto">
         <div className="mx-auto max-w-2xl">
           <Link

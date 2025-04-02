@@ -5,7 +5,8 @@ import { CodeBlock } from "./code-block";
 
 export default function HeroSection() {
   return (
-    <section className="w-full py-12 md:py-24 lg:py-32  border-b flex justify-center bg-muted">
+    <section className="w-full py-12 md:py-24 lg:py-32 bg-[#1c1917] border-b border-bordertogray flex justify-center">
+
       <div className="container px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
           <div className="space-y-2">

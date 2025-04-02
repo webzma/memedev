@@ -22,7 +22,7 @@ export default function SearchBar() {
   return (
     <form
       onSubmit={handleSearch}
-      className="relative w-full max-w-sm border rounded-md"
+      className="relative w-full max-w-sm border border-bordertogray rounded-md"
     >
       <div className="relative">
         <Search className="absolute left-2.5 top-2.5 h-4 w-4 text-muted-foreground" />
