@@ -27,7 +27,7 @@ export function CodeBlock() {
           <div
             key={index}
             className={`transition-opacity duration-500 ${
-              index === currentLine ? "opacity-100" : "opacity-40"
+              index === currentLine ? "text-primary" : "opacity-40"
             } ${line.type === "comment" ? "syntax-comment" : ""}`}
           >
             {line.text}

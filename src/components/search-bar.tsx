@@ -29,7 +29,7 @@ export default function SearchBar() {
         <Input
           type="search"
           placeholder="search.memes('query')"
-          className="pl-9 pr-12 font-mono"
+          className="pl-9 pr-12 font-mono bg-transparent! border-muted h-9 flex items-center"
           value={query}
           onChange={(e) => setQuery(e.target.value)}
         />
@@ -37,7 +37,7 @@ export default function SearchBar() {
           type="submit"
           size="sm"
           variant="ghost"
-          className="absolute right-0 top-0 h-full px-3 text-muted-foreground hover:text-foreground code-font"
+          className="absolute right-0 top-0 h-full px-3 text-muted-foreground hover:text-foreground code-font hover:bg-primary/40!"
         >
           run()
         </Button>
