@@ -6,7 +6,7 @@ import GithubIcon from "./icons/github";
 
 export default function Header() {
   return (
-    <header className="flex justify-center sticky top-0 z-10 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+    <header className="flex justify-center sticky top-0 z-10 w-full border-b border-bordertogray bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 items-center">
         <Link href="/" className="flex items-center gap-2 font-bold text-xl">
           <Code className="h-5 w-5 text-primary" />

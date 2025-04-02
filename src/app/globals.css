@@ -24,6 +24,7 @@
   --color-ring: var(--ring);
   --color-input: var(--input);
   --color-border: var(--border);
+  --color-bordertogray: var(--border-gray);
   --color-destructive: var(--destructive);
   --color-accent-foreground: var(--accent-foreground);
   --color-accent: var(--accent);
@@ -62,6 +63,7 @@
   --destructive: rgba(204, 51, 51, 1);
   --destructive-foreground: rgba(250, 250, 250, 1);
   --border: rgba(230, 230, 250, 1);
+  --border-gray: rgb(58, 58, 58, 1); 
   --input: rgba(230, 230, 230, 1);
   --ring: rgba(93, 175, 80, 1);
   --radius: 0.5rem;
