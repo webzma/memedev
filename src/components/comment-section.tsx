@@ -76,7 +76,7 @@ export function CommentSection({ memeId }: CommentSectionProps) {
           />
           <Button
             onClick={handleAddComment}
-            className="ml-auto code-font"
+            className="ml-auto font-mono code-font text-zinc-900"
             disabled={!newComment.trim()}
           >
             <Send className="h-4 w-4 mr-2" />
