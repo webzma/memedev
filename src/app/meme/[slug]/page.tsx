@@ -83,7 +83,7 @@ export default function MemePage({ params }: { params: { id: string } }) {
                 </div>
                 <div className="p-6 flex flex-col">
                   <div className="flex items-start gap-2 mb-2">
-                    <Terminal className="mt-3 h-4 w-4 text-primary" />
+                    <Terminal className="mt-2 h-5 w-5 text-primary" />
                     <h1 className="text-2xl font-bold code-font">
                       {meme.title}
                     </h1>
