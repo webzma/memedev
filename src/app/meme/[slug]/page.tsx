@@ -58,16 +58,18 @@ export default function MemePage({ params }: { params: { id: string } }) {
 
   return (
     <div className="flex flex-col min-h-screen">
-      <main className="flex-1 container py-12">
+      <main className="flex-1 container py-12 mx-auto">
         <div className="mx-auto max-w-4xl">
           <Link
             href="/"
             className="inline-flex items-center gap-1 mb-6 text-sm font-medium hover:text-primary"
           >
             <ArrowLeft className="h-4 w-4" />
-            <span className="terminal-prompt code-font">cd ..</span>
+            <span className="terminal-prompt font-mono">
+              <span className="text-primary">$</span> cd ..
+            </span>
           </Link>
-          <Card className="border-primary/20">
+          <Card className="bg-muted border-primary/20">
             <CardContent className="p-0">
               <div className="grid md:grid-cols-2 gap-0">
                 <div className="relative aspect-square">
@@ -80,8 +82,8 @@ export default function MemePage({ params }: { params: { id: string } }) {
                   />
                 </div>
                 <div className="p-6 flex flex-col">
-                  <div className="flex items-center gap-2 mb-2">
-                    <Terminal className="h-4 w-4 text-primary" />
+                  <div className="flex items-start gap-2 mb-2">
+                    <Terminal className="mt-3 h-4 w-4 text-primary" />
                     <h1 className="text-2xl font-bold code-font">
                       {meme.title}
                     </h1>
@@ -100,7 +102,7 @@ export default function MemePage({ params }: { params: { id: string } }) {
                   <div className="mt-4 flex flex-wrap gap-2">
                     {meme.tags.map((tag) => (
                       <Link key={tag} href={`/search?q=${tag}`}>
-                        <span className="inline-flex items-center rounded-full bg-muted px-2.5 py-0.5 text-xs font-medium code-font text-primary">
+                        <span className="inline-flex items-center rounded-full bg-card px-2.5 py-0.5 text-xs font-medium code-font text-primary">
                           #{tag}
                         </span>
                       </Link>
@@ -144,7 +146,7 @@ export default function MemePage({ params }: { params: { id: string } }) {
                       onClick={handleShare}
                     >
                       <Share2 className="h-4 w-4" />
-                      <span className="code-font">share()</span>
+                      <span className="code-font ">share()</span>
                     </Button>
                   </div>
                 </div>
