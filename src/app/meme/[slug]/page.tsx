@@ -74,10 +74,10 @@ export default function MemePage({ params }: { params: { id: string } }) {
               <div className="grid md:grid-cols-2 gap-0">
                 <div className="relative aspect-square">
                   <Image
-                    src={meme.image || "/placeholder.svg"}
+                    src="/meme-image.jpg" /* {meme.image || "/meme-image.jpg"} */
                     alt={meme.title}
                     fill
-                    className="object-cover"
+                    className="object-cover p-6 rounded-sm"
                     sizes="(max-width: 768px) 100vw, 50vw"
                   />
                 </div>
