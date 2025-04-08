@@ -71,14 +71,13 @@ export default function MemePage({ params }: { params: { id: string } }) {
           </Link>
           <Card className="bg-muted border-primary/20">
             <CardContent className="p-0">
-              <div className="grid md:grid-cols-2 gap-0">
-                <div className="relative aspect-square">
+              <div className="grid md:grid-cols-2 gap-0 p-6">
+                <div className="relative aspect-square border rounded-3xl">
                   <Image
-                    src="/meme-image.jpg" /* {meme.image || "/meme-image.jpg"} */
+                    src="/meme-image.jpg"
                     alt={meme.title}
                     fill
-                    className="object-cover p-6 rounded-sm"
-                    sizes="(max-width: 768px) 100vw, 50vw"
+                    className="object-cover rounded-2xl"
                   />
                 </div>
                 <div className="p-6 flex flex-col">
