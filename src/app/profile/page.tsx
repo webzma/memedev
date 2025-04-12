@@ -42,17 +42,19 @@ const savedMemes = [memes[0], memes[2], memes[4]];
 export default function ProfilePage() {
   return (
     <div className="flex flex-col min-h-screen">
-      <main className="flex-1 container py-12">
+      <main className="flex-1 mx-auto container py-12">
         <div className="mx-auto max-w-7xl">
           <Link
             href="/"
             className="inline-flex items-center gap-1 mb-6 text-sm font-medium hover:text-primary"
           >
             <ArrowLeft className="h-4 w-4" />
-            <span className="terminal-prompt code-font">cd ..</span>
+            <span className="terminal-prompt font-mono">
+              <span className="text-primary">$</span> cd ..
+            </span>
           </Link>
 
-          <Card className="mb-8 border-primary/20">
+          <Card className="mb-8 bg-muted border-primary/20">
             <CardContent className="p-6">
               <div className="flex flex-col md:flex-row gap-6 items-start">
                 <div className="relative">
@@ -82,7 +84,7 @@ export default function ProfilePage() {
                         @{profile.username}
                       </p>
                     </div>
-                    <Button className="code-font">
+                    <Button className="code-font dark:text-zinc-900">
                       <User className="h-4 w-4 mr-2" />
                       follow()
                     </Button>
@@ -95,7 +97,7 @@ export default function ProfilePage() {
                   </p>
 
                   <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-6">
-                    <div className="text-center p-2 bg-muted/50 rounded-md">
+                    <div className="text-center p-2 bg-card/50 rounded-md">
                       <p className="text-lg font-bold">
                         {profile.stats.uploads}
                       </p>
@@ -103,13 +105,13 @@ export default function ProfilePage() {
                         uploads
                       </p>
                     </div>
-                    <div className="text-center p-2 bg-muted/50 rounded-md">
+                    <div className="text-center p-2 bg-card/50 rounded-md">
                       <p className="text-lg font-bold">{profile.stats.likes}</p>
                       <p className="text-xs text-muted-foreground code-font">
                         likes
                       </p>
                     </div>
-                    <div className="text-center p-2 bg-muted/50 rounded-md">
+                    <div className="text-center p-2 bg-card/50 rounded-md">
                       <p className="text-lg font-bold">
                         {profile.stats.followers}
                       </p>
@@ -117,7 +119,7 @@ export default function ProfilePage() {
                         followers
                       </p>
                     </div>
-                    <div className="text-center p-2 bg-muted/50 rounded-md">
+                    <div className="text-center p-2 bg-card/50 rounded-md">
                       <p className="text-lg font-bold">
                         {profile.stats.following}
                       </p>
@@ -189,7 +191,7 @@ export default function ProfilePage() {
               <h2 className="text-xl font-bold mb-6 code-font">
                 user.settings
               </h2>
-              <Card>
+              <Card className="dark:bg-input/30">
                 <CardHeader>
                   <CardTitle className="code-font">
                     Configuración de cuenta
