@@ -11,7 +11,7 @@ import ModeToggle from "./mode-toggle";
 export default function Header() {
   const pathname = usePathname();
   return (
-    <header className="flex justify-center sticky top-0 z-10 w-full border-b border-bordertogray bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+    <header className="flex justify-center sticky top-0 z-10 w-full border-b border-border dark:border-bordertogray bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 items-center">
         <Link
           href="/"

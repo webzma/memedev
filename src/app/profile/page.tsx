@@ -67,7 +67,7 @@ export default function ProfilePage() {
                   <Button
                     size="icon"
                     variant="outline"
-                    className="absolute -bottom-2 -right-2 h-8 w-8 rounded-full"
+                    className="absolute -bottom-2 -right-2 h-8 w-8 rounded-full border-border dark:border-bordertogray"
                   >
                     <Edit className="h-4 w-4" />
                     <span className="sr-only">Editar perfil</span>

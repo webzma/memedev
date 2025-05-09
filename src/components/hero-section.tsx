@@ -5,7 +5,7 @@ import { CodeBlock } from "./code-block";
 
 export default function HeroSection() {
   return (
-    <section className="w-full py-12 md:py-24 lg:py-32 bg-[#1c1917] border-b border-bordertogray flex justify-center">
+    <section className="w-full py-12 md:py-24 lg:py-32 bg-secondary dark:bg-[#1c1917] border-b border-border dark:border-bordertogray flex justify-center">
 
       <div className="container px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
@@ -29,13 +29,13 @@ export default function HeroSection() {
           </div>
           <div className="space-x-4 flex justify-center items-center">
             <Link href="/upload">
-              <Button className="gap-1 h-10 code-font text-zinc-900 font-mono">
+              <Button className="gap-1 h-10 code-font dark:text-zinc-900 font-mono">
                 <Upload className="h-4 w-4" />
                 <span>upload.meme()</span>
               </Button>
             </Link>
             <Link href="/search">
-              <Button variant="outline" className="h-10 font-mono">
+              <Button variant="outline" className="h-10 font-mono border-border dark:border-bordertogray">
                 <Search className="h-4 w-4" />
                 <span className="code-font">memes.search()</span>
               </Button>

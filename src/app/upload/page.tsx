@@ -78,7 +78,7 @@ export default function UploadPage() {
                     id="title"
                     placeholder="const title = 'Tu título aquí';"
                     required
-                    className="code-font bg-background! font-mono h-10"
+                    className="code-font bg-background! border-border dark:border-bordertogray font-mono h-10"
                   />
                 </div>
                 <div className="space-y-2">
@@ -98,7 +98,7 @@ export default function UploadPage() {
                   <Input
                     id="tags"
                     placeholder="['javascript', 'css', 'bugs']"
-                    className="code-font bg-background! font-mono h-10"
+                    className="code-font bg-background! border-border dark:border-bordertogray font-mono h-10"
                   />
                 </div>
                 <div className="space-y-2">
@@ -127,7 +127,7 @@ export default function UploadPage() {
                       type="button"
                       variant="outline"
                       onClick={() => document.getElementById("image")?.click()}
-                      className="code-font"
+                      className="code-font border-border dark:border-bordertogray"
                     >
                       selectFile()
                     </Button>

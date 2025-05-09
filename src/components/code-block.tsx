@@ -21,7 +21,7 @@ export function CodeBlock() {
   }, []);
 
   return (
-    <div className="font-mono overflow-hidden border border-bordertogray p-6 rounded-md">
+    <div className="font-mono overflow-hidden border border-border dark:border-bordertogray p-6 rounded-md">
       <pre className="text-left overflow-x-auto p-0 text-sm">
         {codeLines.map((line, index) => (
           <div
